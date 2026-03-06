@@ -548,6 +548,34 @@ export default function AbsorptionCalculator({ initialCities = [] }) {
             </tbody>
           </table>
         </div>
+
+        {/* Location & Date Display */}
+        <div style={{
+          background: "linear-gradient(135deg, #0f172a 0%, #1a2847 100%)",
+          padding: "2.5rem",
+          textAlign: "center",
+          marginTop: "2rem",
+          borderRadius: "0px",
+          boxShadow: "0 4px 12px rgba(0,0,0,0.08), 0 2px 4px rgba(0,0,0,0.04)",
+        }}>
+          <div style={{
+            fontSize: "1.8rem",
+            fontWeight: 700,
+            color: "#ffffff",
+            fontFamily: "Helvetica, Arial, sans-serif",
+            letterSpacing: "-0.01em",
+          }}>
+            Housing Market {data.city} {data.year}
+          </div>
+          <div style={{
+            fontSize: "0.9rem",
+            color: "rgba(255, 255, 255, 0.6)",
+            marginTop: "0.5rem",
+            fontFamily: "Helvetica, Arial, sans-serif",
+          }}>
+            {MONTH_NAMES[data.month]} {data.year}
+          </div>
+        </div>
       </div>
     );
   }

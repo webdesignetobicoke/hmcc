@@ -3,6 +3,74 @@
 export default function NavLinks() {
   return (
     <>
+      {/* Top Navigation Bar */}
+      <div style={{
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        padding: '0 20px',
+        gap: '2rem',
+        flexWrap: 'wrap',
+      }}>
+        <div style={{
+          fontSize: '1.3rem',
+          fontWeight: 700,
+          color: '#1a1a1a',
+          fontFamily: 'Helvetica, Arial, sans-serif',
+        }}>
+          💰 HMCC
+        </div>
+        
+        <nav style={{
+          display: 'flex',
+          gap: '2rem',
+          alignItems: 'center',
+          flexWrap: 'wrap',
+        }}>
+          <a href="/" style={{
+            textDecoration: 'none',
+            color: '#1a1a1a',
+            fontSize: '0.95rem',
+            fontWeight: 600,
+            fontFamily: 'Helvetica, Arial, sans-serif',
+            transition: 'color 0.2s ease',
+          }} onMouseOver={(e) => e.target.style.color = '#0066cc'} onMouseOut={(e) => e.target.style.color = '#1a1a1a'}>
+            Calculator
+          </a>
+          <a href="/canada" style={{
+            textDecoration: 'none',
+            color: '#1a1a1a',
+            fontSize: '0.95rem',
+            fontWeight: 600,
+            fontFamily: 'Helvetica, Arial, sans-serif',
+            transition: 'color 0.2s ease',
+          }} onMouseOver={(e) => e.target.style.color = '#0066cc'} onMouseOut={(e) => e.target.style.color = '#1a1a1a'}>
+            Canada
+          </a>
+          <a href="/will-crash" style={{
+            textDecoration: 'none',
+            color: '#1a1a1a',
+            fontSize: '0.95rem',
+            fontWeight: 600,
+            fontFamily: 'Helvetica, Arial, sans-serif',
+            transition: 'color 0.2s ease',
+          }} onMouseOver={(e) => e.target.style.color = '#0066cc'} onMouseOut={(e) => e.target.style.color = '#1a1a1a'}>
+            Forecast
+          </a>
+          <a href="/crash-2008" style={{
+            textDecoration: 'none',
+            color: '#1a1a1a',
+            fontSize: '0.95rem',
+            fontWeight: 600,
+            fontFamily: 'Helvetica, Arial, sans-serif',
+            transition: 'color 0.2s ease',
+          }} onMouseOver={(e) => e.target.style.color = '#0066cc'} onMouseOut={(e) => e.target.style.color = '#1a1a1a'}>
+            2008 Analysis
+          </a>
+        </nav>
+      </div>
+
+      {/* Topics Section - Below Calculator */}
       <div style={{
         marginTop: '50px',
         padding: '30px',
@@ -12,7 +80,7 @@ export default function NavLinks() {
       }}>
         <h2 style={{ 
           fontSize: '1.8em',
-          fontFamily: 'Merriweather, serif',
+          fontFamily: 'Helvetica, Arial, sans-serif',
           marginBottom: '20px',
           color: '#1a1a1a'
         }}>
@@ -22,7 +90,7 @@ export default function NavLinks() {
           display: 'grid',
           gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
           gap: '15px',
-          fontFamily: 'Inter, sans-serif'
+          fontFamily: 'Helvetica, Arial, sans-serif'
         }}>
           <a href="/canada" style={{
             display: 'block',
@@ -87,7 +155,7 @@ export default function NavLinks() {
       }}>
         <h2 style={{ 
           fontSize: '1.8em',
-          fontFamily: 'Merriweather, serif',
+          fontFamily: 'Helvetica, Arial, sans-serif',
           marginBottom: '20px',
           color: '#1a1a1a'
         }}>
@@ -97,7 +165,7 @@ export default function NavLinks() {
           display: 'grid',
           gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
           gap: '10px',
-          fontFamily: 'Inter, sans-serif'
+          fontFamily: 'Helvetica, Arial, sans-serif'
         }}>
           <a href="/ontario" style={{
             display: 'block',

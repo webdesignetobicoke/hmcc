@@ -66,7 +66,7 @@ export default async function MarketPage() {
               lineHeight: 1.2,
               letterSpacing: '-0.02em'
             }}>
-              Housing Market Crash Calculator
+              Real Estate Market Intelligence
             </h1>
             <p className="hero-subheading" style={{
               fontSize: '1.3rem',
