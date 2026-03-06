@@ -295,32 +295,10 @@ export default function AbsorptionCalculator({ initialCities = [] }) {
   function renderResults() {
     return (
       <div style={{ width: "100%" }}>
-        {/* Header with City, Month, Year */}
-        <div style={{
-          background: "#f8fbff",
-          border: "2px solid #e0e8f0",
-          borderBottom: "none",
-          borderRadius: "0px",
-          padding: "1.5rem 2.5rem",
-          textAlign: "center",
-          marginBottom: "0",
-        }}>
-          <div style={{
-            fontSize: "1.1rem",
-            fontWeight: 700,
-            color: "#1a4d7f",
-            fontFamily: "Helvetica, Arial, sans-serif",
-            letterSpacing: "-0.01em",
-          }}>
-            {data.city} • {MONTH_NAMES[data.month]} {data.year}
-          </div>
-        </div>
-
         {/* Calculation Card */}
         <div className="calc-card-container" style={{
           background: "linear-gradient(135deg, #ffffff 0%, #f8fbff 100%)",
           border: "2px solid #e0e8f0",
-          borderTop: "none",
           padding: "0",
           marginBottom: "2rem",
           borderRadius: "0px",
